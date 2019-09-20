@@ -59,7 +59,7 @@ rm -rf tmux
 
 echo "[+] Tmux config file now in place"
 sleep 1
-echo "[+] Now updating system
+echo "[+] Now updating system"
 sleep 2
 sudo apt update && sudo apt upgrade && supd apt dist-upgrade
 echo "[+] Setup Complete, please reboot system"
