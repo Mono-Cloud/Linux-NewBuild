@@ -37,7 +37,7 @@ echo "[+] Folder created for fish functions"
 
 
 #Pull fish functions from personal github repo
-git clone https://github.com/Mono-Cloud/Fish_Functions.git .config/fish/functions/.`
+git clone https://github.com/Mono-Cloud/Fish_Functions.git .config/fish/functions/.
 echo "[+] Fish functions cloned successfully"
 sleep 2
 
