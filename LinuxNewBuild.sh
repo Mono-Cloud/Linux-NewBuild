@@ -2,6 +2,9 @@
 
 #This script will install my commonly used programs and config files. Make sure to run it as root.
 
+echo "[+] Installing Vim, Git, Ufw, Fish and Tmux"
+sleep 2
+
 sudo apt install vim
 echo "[+] Vim Installed"
 
@@ -42,10 +45,9 @@ echo "[+] Fish functions cloned successfully"
 sleep 2
 
 #Run previous tmux session when opening a shell
-sudo echo "test $TERM != "screen >> /etc/fish/config.fish"
-sudo echo "exec tmux new -s Main; or tmux new -s Main" >> /etc/fish/config.fish
-
-echo "[+] Tmux commands echoed successfully"
+#sudo echo "test $TERM != "screen >> /etc/fish/config.fish"
+#sudo echo "exec tmux new -s Main; or tmux new -s Main" >> /etc/fish/config.fish
+#echo "[+] Tmux commands echoed successfully"
 
 #Pull github repo and move file
 cd
@@ -59,4 +61,6 @@ echo "[+] Tmux config file now in place"
 sleep 1
 echo "[+] Now updating system
 sleep 2
+sudo apt update && sudo apt upgrade && supd apt dist-upgrade
 echo "[+] Setup Complete, please reboot system"
+sleep 2
