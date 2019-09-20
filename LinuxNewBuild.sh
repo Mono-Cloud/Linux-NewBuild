@@ -5,28 +5,30 @@
 echo "[+] Installing Vim, Git, Ufw, Fish and Tmux"
 sleep 2
 
-sudo apt install vim
+sudo apt install vim -y
 echo "[+] Vim Installed"
 
-sudo apt install git
+sudo apt install git -y
 echo "[+] Git Installed"
 
-sudo apt install ufw
+sudo apt install ufw -y 
 echo "[+] Ufw Installed"
 
-sudo apt install fish
+sudo apt install fish -y
 echo "[+] Fish Installed"
 
-sudo apt install tmux
+sudo apt install tmux -y
 echo "[+] Tmux Installed"
 
-#Ensure ufw is running 
-sudo ufw enable
-echo "[+] Ufw is enabled"
+
 
 echo "[+] All programs installed successfully"
 sleep 2
 
+#Ensure ufw is running 
+sudo ufw enable
+echo "[+] Ufw is enabled"
+sleep 1
 
 #Change default shell
 chsh -s /usr/bin/fish
@@ -61,6 +63,17 @@ echo "[+] Tmux config file now in place"
 sleep 1
 echo "[+] Now updating system"
 sleep 2
-sudo apt update && sudo apt upgrade && supd apt dist-upgrade
-echo "[+] Setup Complete, please reboot system"
-sleep 2
+sudo apt update -y && sudo apt upgrade -y && supo apt dist-upgrade -y
+
+echo "[+] Setup Complete, rebooting system in 5 seconds"
+sleep 1
+echo "[+] Setup Complete, rebooting system in 4 seconds"
+sleep 1
+echo "[+] Setup Complete, rebooting system in 3 seconds"
+sleep 1
+echo "[+] Setup Complete, rebooting system in 2 seconds"
+sleep 1
+echo "[+] Setup Complete, rebooting system in 1 second"
+sleep 1
+
+init 6
