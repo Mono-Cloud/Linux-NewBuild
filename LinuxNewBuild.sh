@@ -63,7 +63,7 @@ echo "[+] Tmux config file now in place"
 sleep 1
 echo "[+] Now updating system"
 sleep 2
-sudo apt update -y && sudo apt upgrade -y && supo apt dist-upgrade -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y
 
 echo "[+] Setup Complete, rebooting system in 5 seconds"
 sleep 1
