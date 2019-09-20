@@ -37,7 +37,7 @@ sleep 1
 
 #Create a directory for personal fish functions
 cd
-mkdir .config/fish/functions
+mkdir -p .config/fish/functions
 echo "[+] Folder created for fish functions"
 
 
