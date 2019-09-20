@@ -21,26 +21,34 @@ echo "[+] Tmux Installed"
 sudo ufw enable
 echo "[+] Ufw is enabled"
 
-# Run fish
-fish
+echo "[+] All programs installed successfully"
+sleep 2
 
-#Create a directory for personal fish functions
-mkdir .config/fish/functions
-
-#Pull fish functions from personal github repo
-git clone https://github.com/Mono-Cloud/Fish_Functions.git .config/fish/functions/.`
 
 #Change default shell
 chsh -s /usr/bin/fish
+echo "[+] Default shell changed to fish"
+sleep 1
 
-#Fully update system
-full_update
+#Create a directory for personal fish functions
+cd
+mkdir .config/fish/functions
+echo "[+] Folder created for fish functions"
+
+
+#Pull fish functions from personal github repo
+git clone https://github.com/Mono-Cloud/Fish_Functions.git .config/fish/functions/.`
+echo "[+] Fish functions cloned successfully"
+sleep 2
 
 #Run previous tmux session when opening a shell
 sudo echo "test $TERM != "screen >> /etc/fish/config.fish"
-sudo exec tmux new -s Main; or tmux new -s Main" >> /etc/fish/config.fish
+sudo echo "exec tmux new -s Main; or tmux new -s Main" >> /etc/fish/config.fish
+
+echo "[+] Tmux commands echoed successfully"
 
 #Pull github repo and move file
+cd
 git clone https://github.com/Mono-Cloud/tmux.git
 mv ./tmux/.tmux.conf ~
 
@@ -48,5 +56,7 @@ mv ./tmux/.tmux.conf ~
 rm -rf tmux
 
 echo "[+] Tmux config file now in place"
-echo "[*] You now need to specify the config file for tmux to use. Press Ctrl+b then :config-file .tmux.conf"
-echo "[+] Setup Complete"
+sleep 1
+echo "[+] Now updating system
+sleep 2
+echo "[+] Setup Complete, please reboot system"
