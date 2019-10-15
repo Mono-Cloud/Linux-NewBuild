@@ -8,6 +8,7 @@ Run with `sudo bash LinuxNewBuild.sh` to save having to chmod it.
 Future Additions
 
 * Add a keyboard shortcut to map gnome-terminal to Super+Enter
+* Test for network connectivity. Display an error if none found
 
 Current Bugs
 
